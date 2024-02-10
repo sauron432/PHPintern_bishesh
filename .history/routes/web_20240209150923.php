@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\TasksController;
+use C:\Users\HP\Documents\GitHub\PHPintern_bishesh\app\Http\Controllers\TasksController.php
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +20,7 @@ Route::get('/', function ()
 
     return view('welcome');
 });
-Route::get('/tasks', [TasksController::class,'index']);
+Route::get('/tasks',[TaskController::class,'index']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
